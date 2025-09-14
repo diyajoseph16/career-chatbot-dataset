@@ -2,58 +2,78 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
-      "responses": ["Hello! I'm CareerBot, your career mentor. What field are you interested in exploring?"]
-    },
-    {
-      "tag": "career_ai",
-      "patterns": ["I like AI", "I want to work in AI", "Tell me about AI careers", "How to get into AI"],
-      "responses": ["AI is booming! Start with Python, learn Machine Learning (ML) basics, and practice with small projects. Kaggle and Coursera are great places to start. Aim to build at least 2–3 ML projects before applying for internships."]
-    },
-    {
-      "tag": "career_webdev",
-      "patterns": ["I like web development", "I want to become a web developer", "Tell me about web development", "How to start with web dev"],
-      "responses": ["Web development is a great career! Learn HTML, CSS, and JavaScript first. Then move to frameworks like React (Frontend) and Node.js (Backend). Build a personal portfolio website to showcase your projects."]
-    },
-    {
-      "tag": "career_ece",
-      "patterns": ["I like electronics", "I want to work in core electronics", "Tell me about electronics career", "What are career options in ECE"],
-      "responses": ["ECE has exciting fields like VLSI, Embedded Systems, and IoT. Learn C programming, microcontrollers (Arduino/ESP32), and PCB design. Internships in core companies will help you get hands-on experience."]
-    },
-    {
-      "tag": "career_cybersecurity",
-      "patterns": ["I like cybersecurity", "I want to become an ethical hacker", "How to learn cybersecurity", "Tell me about cyber security"],
-      "responses": ["Cybersecurity is in demand! Learn Linux basics, networking, and tools like Wireshark. Start with TryHackMe or Hack The Box for hands-on practice. Certifications like CEH or Security+ can boost your resume."]
-    },
-    {
-      "tag": "career_datascience",
-      "patterns": ["I like data science", "Tell me about data science", "I want to become a data scientist"],
-      "responses": ["Data Science combines coding, statistics, and domain knowledge. Learn Python, Pandas, NumPy, Matplotlib, and SQL first. Then move to Machine Learning with Scikit-Learn. Work on datasets from Kaggle to gain practical experience."]
-    },
-    {
-      "tag": "resume_tips",
-      "patterns": ["How to make a good resume", "Give me resume tips", "How to improve my CV"],
-      "responses": ["Keep your resume one page, highlight your projects and internships, and use strong action verbs. Avoid long paragraphs — recruiters scan resumes quickly. Tools like Overleaf or Canva can help you design it neatly."]
-    },
-    {
-      "tag": "interview_tips",
-      "patterns": ["Give me interview tips", "How to prepare for interviews", "How to crack interviews"],
-      "responses": ["Practice common HR questions, know your resume well, and review key technical subjects. For coding roles, practice on LeetCode, HackerRank, or Codeforces. Confidence and clarity matter as much as technical knowledge."]
-    },
-    {
-      "tag": "learning_resources",
-      "patterns": ["Suggest free courses", "Where to learn coding", "Give me some resources"],
-      "responses": ["Great free resources: freeCodeCamp.org, CS50 by Harvard, and W3Schools for basics. YouTube channels like Tech with Tim, Apna College, and Code With Harry are excellent for step-by-step tutorials."]
-    },
-    {
-      "tag": "motivation",
-      "patterns": ["I feel lost", "I'm confused about my career", "I need motivation", "I feel demotivated"],
-      "responses": ["It's okay to feel confused. Explore, experiment, and find what excites you. Remember, you don’t have to figure everything out today — take it one step at a time. 💪"]
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "what's up", "yo"],
+      "responses": ["Hello! I'm CareerBot, your career mentor. What field are you interested in exploring?", "Hi there! I'm here to help with your career queries. Ask me anything."]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you", "Goodbye", "Talk to you later"],
-      "responses": ["Good luck with your career! 🚀 Come back anytime for guidance."]
+      "patterns": ["bye", "goodbye", "quit", "see you later"],
+      "responses": ["Goodbye! Best of luck with your career 😊", "Take care! Wishing you success ahead!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thanks a lot", "much appreciated"],
+      "responses": ["You're welcome! 😊", "Happy to help! 👍"]
+    },
+    {
+      "tag": "career_ai",
+      "patterns": ["ai", "machine learning", "artificial intelligence", "ml", "deep learning", "ai career"],
+      "responses": ["AI is booming! Start with Python, learn Machine Learning basics, and practice with small projects. Kaggle and Coursera are great places to start. Build at least 2–3 ML projects before applying for internships.", "AI careers are exciting! Focus on Python, ML algorithms, and try building a chatbot or image classifier as practice projects."]
+    },
+    {
+      "tag": "career_webdev",
+      "patterns": ["web development", "frontend", "backend", "full stack", "react", "html css javascript"],
+      "responses": ["Web development is a solid choice! Learn HTML, CSS, JavaScript first, then move to React (frontend) and Node.js or Django (backend). Build 2–3 websites to showcase on GitHub.", "Frontend + Backend = Full Stack! Start small, make personal portfolio sites, then try clones of famous websites."]
+    },
+    {
+      "tag": "career_datascience",
+      "patterns": ["data science", "data analyst", "analytics", "data career"],
+      "responses": ["Data Science is all about insights! Learn Python, Pandas, NumPy, Matplotlib, and SQL. Practice on Kaggle datasets. Later explore ML models and Tableau/Power BI.", "Start with Python for data, then practice EDA (Exploratory Data Analysis) on public datasets. Employers love hands-on experience!"]
+    },
+    {
+      "tag": "career_cybersec",
+      "patterns": ["cybersecurity", "ethical hacking", "network security", "cyber career"],
+      "responses": ["Cybersecurity is critical today. Learn networking basics (OSI model, TCP/IP), Linux commands, and tools like Wireshark, Metasploit. Try CTF challenges on TryHackMe and HackTheBox.", "Start with CompTIA Security+ syllabus as a roadmap. Learn networking and build labs to practice."]
+    },
+    {
+      "tag": "career_placements",
+      "patterns": ["placements", "placement prep", "campus recruitment", "interview preparation"],
+      "responses": ["Placement prep tip: Focus on aptitude (quant + reasoning), DSA (Data Structures & Algorithms), and one programming language. Practice mock interviews and HR questions.", "Consistent practice is key! Try sites like GeeksforGeeks, LeetCode, and InterviewBit daily for coding prep."]
+    },
+    {
+      "tag": "career_internship",
+      "patterns": ["internship", "how to find internship", "free internship", "paid internship"],
+      "responses": ["Look for internships on LinkedIn, Internshala, and AngelList. Even unpaid ones help you gain experience early. Build small projects to stand out.", "Cold-email startups and showcase your GitHub projects — many hire motivated students directly!"]
+    },
+    {
+      "tag": "resume_tips",
+      "patterns": ["resume tips", "cv tips", "how to write resume", "good resume", "resume format"],
+      "responses": ["Keep your resume one page (for students), use bullet points, highlight projects, skills, and achievements. Avoid long paragraphs.", "Use action words like 'Developed', 'Built', 'Designed'. Tailor your resume for each job by adding relevant keywords."]
+    },
+    {
+      "tag": "interview_tips",
+      "patterns": ["interview tips", "interview questions", "how to prepare for interview", "HR questions"],
+      "responses": ["Practice common HR questions: 'Tell me about yourself', 'Strengths & Weaknesses', 'Why should we hire you?'. Stay confident and concise.", "For technical interviews, revise DSA, OOPs concepts, and your projects. Explain your projects clearly as if teaching a beginner."]
+    },
+    {
+      "tag": "skills_future",
+      "patterns": ["skills to learn", "future skills", "best skills", "what should I learn"],
+      "responses": ["Top future skills: Python, Cloud Computing (AWS/GCP), Data Analysis, AI/ML, Cybersecurity, and Communication skills.", "Soft skills matter too! Practice communication, teamwork, and problem-solving along with technical skills."]
+    },
+    {
+      "tag": "free_courses",
+      "patterns": ["free courses", "free learning", "best free sites", "online resources"],
+      "responses": ["Great free resources: freeCodeCamp.org, CS50 by Harvard, and W3Schools for basics. YouTube channels like Tech with Tim, Apna College, and Code With Harry are excellent.", "For AI/ML: Google AI Crash Course, Kaggle Learn, and Fast.ai are free and highly recommended."]
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["motivate me", "I'm stuck", "help me stay focused", "I feel lost"],
+      "responses": ["Remember, every expert was once a beginner. Small consistent steps beat perfection!", "Failure is just feedback. Keep learning, keep building. Your future self will thank you."]
+    },
+    {
+      "tag": "fallback",
+      "patterns": ["random text", "what", "huh", "not sure", "confused"],
+      "responses": ["I’m not sure I got that 🤔 You can ask me about: Career paths, Resume tips, Interview prep, Internships, or Free courses!", "Could you rephrase that? Try asking about AI, Web Development, Data Science, Cybersecurity, Resume or Interview tips."]
     }
   ]
 }
