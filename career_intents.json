@@ -1,0 +1,59 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
+      "responses": ["Hello! I'm CareerBot, your career mentor. What field are you interested in exploring?"]
+    },
+    {
+      "tag": "career_ai",
+      "patterns": ["I like AI", "I want to work in AI", "Tell me about AI careers", "How to get into AI"],
+      "responses": ["AI is booming! Start with Python, learn Machine Learning (ML) basics, and practice with small projects. Kaggle and Coursera are great places to start. Aim to build at least 2–3 ML projects before applying for internships."]
+    },
+    {
+      "tag": "career_webdev",
+      "patterns": ["I like web development", "I want to become a web developer", "Tell me about web development", "How to start with web dev"],
+      "responses": ["Web development is a great career! Learn HTML, CSS, and JavaScript first. Then move to frameworks like React (Frontend) and Node.js (Backend). Build a personal portfolio website to showcase your projects."]
+    },
+    {
+      "tag": "career_ece",
+      "patterns": ["I like electronics", "I want to work in core electronics", "Tell me about electronics career", "What are career options in ECE"],
+      "responses": ["ECE has exciting fields like VLSI, Embedded Systems, and IoT. Learn C programming, microcontrollers (Arduino/ESP32), and PCB design. Internships in core companies will help you get hands-on experience."]
+    },
+    {
+      "tag": "career_cybersecurity",
+      "patterns": ["I like cybersecurity", "I want to become an ethical hacker", "How to learn cybersecurity", "Tell me about cyber security"],
+      "responses": ["Cybersecurity is in demand! Learn Linux basics, networking, and tools like Wireshark. Start with TryHackMe or Hack The Box for hands-on practice. Certifications like CEH or Security+ can boost your resume."]
+    },
+    {
+      "tag": "career_datascience",
+      "patterns": ["I like data science", "Tell me about data science", "I want to become a data scientist"],
+      "responses": ["Data Science combines coding, statistics, and domain knowledge. Learn Python, Pandas, NumPy, Matplotlib, and SQL first. Then move to Machine Learning with Scikit-Learn. Work on datasets from Kaggle to gain practical experience."]
+    },
+    {
+      "tag": "resume_tips",
+      "patterns": ["How to make a good resume", "Give me resume tips", "How to improve my CV"],
+      "responses": ["Keep your resume one page, highlight your projects and internships, and use strong action verbs. Avoid long paragraphs — recruiters scan resumes quickly. Tools like Overleaf or Canva can help you design it neatly."]
+    },
+    {
+      "tag": "interview_tips",
+      "patterns": ["Give me interview tips", "How to prepare for interviews", "How to crack interviews"],
+      "responses": ["Practice common HR questions, know your resume well, and review key technical subjects. For coding roles, practice on LeetCode, HackerRank, or Codeforces. Confidence and clarity matter as much as technical knowledge."]
+    },
+    {
+      "tag": "learning_resources",
+      "patterns": ["Suggest free courses", "Where to learn coding", "Give me some resources"],
+      "responses": ["Great free resources: freeCodeCamp.org, CS50 by Harvard, and W3Schools for basics. YouTube channels like Tech with Tim, Apna College, and Code With Harry are excellent for step-by-step tutorials."]
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["I feel lost", "I'm confused about my career", "I need motivation", "I feel demotivated"],
+      "responses": ["It's okay to feel confused. Explore, experiment, and find what excites you. Remember, you don’t have to figure everything out today — take it one step at a time. 💪"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you", "Goodbye", "Talk to you later"],
+      "responses": ["Good luck with your career! 🚀 Come back anytime for guidance."]
+    }
+  ]
+}
